@@ -1,0 +1,12 @@
+# Instrucciones
+1.- Para poder utilizar el sistema embebido primero te recomiendo que realices la practica sobre una placa protoboard, realizando las conexiones de los componentes principales
+(Microcontrolador, crystal, capacitores, conexiones de alimentaciones, conexiones de pantalla lcd, conexciones del sensor receptor)
+
+2.- Anexo un comprimido llamado protocolo nec, dentro se encuentran los 2 codigos para el control de la placa, con el codigo de protocolo nec podras conocer los valores hexadecimales que
+se encuentra recibiendo el sensor
+
+3.- Tambien anexo la libreria nec_ir y la libreria i2c_FLEX_LCD las cuales se deben agregar en los driver del programa C CCS compiler, y despues podras compilar los codigos sin problemas.
+
+4.- El sensor siempre debe conectarse al pin B0 del microcontrolador 16F877A, puedes modificar esto editando la libreria NEC_ir si lo deseas.
+
+5.- Para poder realizar el control PWM solo debes remplazar los Hexadecimales del codigo por los Hexadecimales que envia el control que utilizas, y claro colocar los valores que mas te convengan.
